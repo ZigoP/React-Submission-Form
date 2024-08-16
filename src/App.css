@@ -1,38 +1,82 @@
-.App {
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+}
+
+#wrapperDiv {
+  margin: 2.5% auto 2.5% auto;
+  width: 60%;
+  padding: 2.5%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
+  color: forestgreen;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  display: block;
+  width: 100%;
+  /* margin-bottom: 15px; */
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="radio"], input[type="checkbox"], input[type="button"],input[type="submit"]{
+  display: inline;
+  width: 40%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: 5%;
+}
+input[type="button"],input[type="submit"]{
+  margin: 5px 5%;
+  background-color: forestgreen;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 8px;
+  margin: 5px 0;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.requiredField, .errorMessage {
+  color: red;
+  font-weight: normal;
+}
+
+.focusedInput {
+  border: 2px solid red;
 }
